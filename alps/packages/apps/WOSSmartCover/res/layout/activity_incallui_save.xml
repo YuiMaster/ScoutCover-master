@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	xmlns:tools="http://schemas.android.com/tools"  
+	android:layout_width="match_parent"  
+	android:layout_height="match_parent"
+	android:background="@android:color/black"
+	android:id="@+id/root">
+	<RelativeLayout 
+	    android:layout_width="@dimen/second_width"  
+	    android:layout_height="@dimen/incoming_a_height"
+	    android:layout_centerHorizontal="true" 
+	    android:background="@drawable/incoming_bg_a"
+	    >
+		<ImageView 
+		    android:layout_marginTop="23dp"
+		    android:src="@drawable/head_img"
+		    android:layout_width="wrap_content"  
+		    android:layout_height="wrap_content"  
+		    android:paddingTop="10dp"
+		    android:layout_centerHorizontal="true" 
+		    />
+	
+		<TextView
+		    android:id="@+id/textView1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="86dp"
+		    android:layout_centerHorizontal="true"
+		    android:textSize="16sp"
+		    android:textColor="@color/phone_num_color"
+		    android:text="@string/null_string" />
+	</RelativeLayout>
+	<RelativeLayout 
+	    android:layout_width="@dimen/second_width"  
+	    android:layout_height="@dimen/incoming_b_height"
+	    android:layout_marginTop="@dimen/incoming_a_height"
+	    android:layout_centerHorizontal="true" 
+	    android:background="@drawable/incoming_bg_b"
+	    >
+		<ImageView  
+		    android:id="@+id/btn_hang_on"  
+		    android:layout_width="wrap_content"  
+		    android:layout_height="wrap_content"  
+		    android:layout_centerHorizontal="true"  
+		    android:layout_centerVertical="true"  />
+		<ImageView  
+		    android:id="@+id/btn_hang_off"  
+		    android:layout_width="wrap_content"  
+		    android:layout_height="wrap_content"  
+		    android:layout_centerHorizontal="true"  
+		    android:layout_centerVertical="true"  />
+	
+		<TextView
+		    android:id="@+id/textView2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="20dp"
+		    android:layout_marginTop="18dp"
+		    android:layout_centerHorizontal="true"  
+		    android:textSize="14sp"
+		    android:textColor="@color/phone_status_color"
+		    android:text="@string/null_string"/>
+		<TextView
+		    android:id="@+id/textView3"
+		    android:layout_width="wrap_content"
+		    android:layout_height="20dp"
+		    android:layout_marginTop="36dp"
+		    android:layout_centerHorizontal="true"  
+		    android:textSize="14sp"
+		    android:textColor="@color/phone_time_color"
+		    android:text="@string/null_string" />
+
+	</RelativeLayout>
+</RelativeLayout>  

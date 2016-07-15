@@ -1,0 +1,52 @@
+<resources>
+    <dimen name="max_width">322dp</dimen>
+    <dimen name="max_height">322dp</dimen>
+    
+    
+    <dimen name="half_second_width">146dp</dimen>
+    <dimen name="second_width">292dp</dimen>
+    <dimen name="second_height">292dp</dimen>
+    
+    <dimen name="activitys_padding_top">15dp</dimen>
+    
+    <!-- main -->
+    <dimen name="analog_width">292dp</dimen>
+    <dimen name="analog_height">292dp</dimen>
+    
+    
+    <dimen name="preview_page_height">233dp</dimen>
+    <dimen name="back_btn_padding_top">233dp</dimen>
+    
+    <dimen name="back_button_height">59dp</dimen>
+    
+    
+    <!-- settings -->
+    <dimen name="settings_icon_width">72dp</dimen>
+    <dimen name="settings_icon_height">72dp</dimen>
+    <dimen name="settings_icon_text">17sp</dimen>
+    
+    <!-- sms -->
+    <dimen name="sms_title_textsize">17sp</dimen>
+    <dimen name="sms_data_textsize">14sp</dimen>
+    <dimen name="sms_cur_textsize">14sp</dimen>
+    <dimen name="sms_a_height">61dp</dimen>
+    <dimen name="sms_b_height">172dp</dimen>
+    <dimen name="sms_b_padding_top">@dimen/sms_a_height</dimen>
+    
+    <!-- call log -->
+    <dimen name="callog_title_textsize">17sp</dimen>
+    <dimen name="callog_data_textsize">14sp</dimen>
+    <dimen name="callog_a_height">61dp</dimen>
+    <dimen name="callog_b_height">172dp</dimen>
+    <dimen name="callog_b_padding_top">61dp</dimen>
+    <dimen name="callog_c_padding_top">233dp</dimen>
+    
+    
+    <!-- incoming -->
+    <dimen name="incoming_a_height">116dp</dimen>
+    <dimen name="incoming_b_height">176dp</dimen>
+    
+    
+    <!-- preview -->
+    <dimen name="preview_hallclock_wh">212dp</dimen>
+</resources>

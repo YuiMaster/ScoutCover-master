@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:style_clock="http://schemas.android.com/apk/res/com.wind.smartcover"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wind.smartcover.preview.ClockPreviewActivity" >
+	<com.wind.smartcover.preview.PreviewHallClock
+	    android:id="@+id/preview_hall_clock"
+	    android:layout_centerHorizontal="true"
+	    android:layout_width="@dimen/preview_hallclock_wh"
+	    android:layout_height="@dimen/preview_hallclock_wh"
+	    style_clock:preview_style="5"
+	    >
+	    <ImageView
+	        android:id="@+id/clock_bg"
+	        android:background="@drawable/preview_selected"
+	        android:layout_centerInParent="true"
+		    android:layout_width="212dp"
+		    android:layout_height="212dp"
+	        />
+	    <include layout="@layout/preview_digital_clock"
+	        /> 
+	    <include layout="@layout/preview_analog_clock"
+	        />
+	</com.wind.smartcover.preview.PreviewHallClock>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleLayout">
+        <attr name="radius" format="dimension" />
+        <attr name="offset" format="integer" />
+    </declare-styleable>
+    
+    <declare-styleable name="style_clock">
+        <attr name="preview_style" format="integer" />
+        <attr name="clock_dial" format="reference" />
+        <attr name="clock_hour" format="reference" />
+        <attr name="clock_minute" format="reference" />
+        <attr name="clock_second" format="reference" />
+    </declare-styleable>
+</resources>

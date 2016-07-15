@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wind.smartcover"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="2028"
+    android:versionName="2.0.28_M">
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="23" />
+    
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    
+    <!-- statusbar -->
+    <uses-permission android:name="android.permission.STATUS_BAR" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    
+    <!--flash light -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-feature android:name="android.hardware.camera.flash"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    
+    <!--call log -->
+	<uses-permission android:name="android.permission.READ_CALL_LOG" />
+	<uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+	<uses-permission android:name="android.permission.CALL_PHONE" />
+	<uses-permission android:name="android.permission.READ_CONTACTS" />
+	
+    <!--unread sms -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    
+    <!-- phone -->
+    <uses-permission android:name="android.permission.CALL_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    
+    <!--clock settings -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    
+<!-- 
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"
+        android:name="com.wind.smartcover.WindApp"
+ -->
+ 
+	<!-- A: zhangxutong@wind-mobi.com 2015 10 27 begin for baidutongji sdk -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+ 	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+ 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+ 	<!-- uses-permission android:name="android.permission.READ_PHONE_STATE" />
+ 	<uses-permission android:name="android.permission.WRITE_SETTINGS" /> -->
+	<!-- A: zhangxutong@wind-mobi.com 2015 10 27 end for baidutongji sdk -->
+ 
+    <application
+        android:hardwareAccelerated="true"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/WindHallStyle">
+                
+        <!-- A: zhangxutong@wind-mobi.com 2015 10 27 begin for baidutongji sdk -->
+        <meta-data android:name="BaiduMobAd_STAT_ID" android:value="92b2438612" /><!-- app id -->
+        <meta-data android:name="BaiduMobAd_ONLY_WIFI" android:value="true" />
+        <meta-data android:name="BaiduMobAd_CELL_LOCATION" android:value="true" />
+        <meta-data android:name="BaiduMobAd_GPS_LOCATION" android:value="true" />
+        <meta-data android:name="BaiduMobAd_WIFI_LOCATION" android:value="true" />
+        <!-- A: zhangxutong@wind-mobi.com 2015 10 27 end for baidutongji sdk -->
+        
+        <service
+            android:screenOrientation="portrait"
+            android:name="com.wind.smartcover.WindHallService" >
+            <intent-filter>
+                <action android:name="com.wind.smartcover.WindHallService" />
+                <action android:name="com.wind.removepreview" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <receiver android:name="com.wind.smartcover.BootCompletedReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+                <action android:name="android.intent.action.REBOOT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        
+        <activity
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:name="com.wind.smartcover.MainHallActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+                <!-- 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> 
+            -->
+        </activity>
+        
+        <!-- Music -->
+        <activity
+            android:excludeFromRecents="true"
+            android:name="com.wind.smartcover.music.MusicPlayerActivity"
+            android:screenOrientation="portrait"
+             >
+        </activity>
+        
+        <!-- clock preview -->
+        <activity
+            android:excludeFromRecents="true"
+            android:name="com.wind.smartcover.preview.ClockPreviewActivity"
+            android:screenOrientation="portrait"
+             >
+        </activity>
+        
+        <!-- call log -->
+        <activity
+            android:excludeFromRecents="true"
+            android:name="com.wind.smartcover.calllog.CallLogActivity"
+            android:screenOrientation="portrait"
+             >
+        </activity>
+        <activity
+            android:name="com.wind.smartcover.phone.PhoneActivity"
+            android:screenOrientation="portrait"
+             >
+        </activity>
+        <activity
+            android:name="com.wind.smartcover.phone.SimSelectActivity"
+            android:screenOrientation="portrait"
+             >
+        </activity>
+        
+        <!-- unread sms -->
+        <activity
+            android:excludeFromRecents="true"
+            android:name="com.wind.smartcover.sms.SmsReaderActivity"
+            android:screenOrientation="portrait"
+             >
+        </activity>
+    </application>
+
+</manifest>

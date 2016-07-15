@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WOSSmartCover</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    
+    <string name="hang_on">Anwser</string>
+    <string name="hang_off">Hang up</string>
+    
+    
+    <string name="callog_title">Call history</string>
+    <string name="null_string"></string>
+    <string name="no_unread_msg">no unread messages</string>
+    <string name="no_missed_calls">no missed calls</string>
+    <string name="unread_msg">Unread Messages</string>
+    <string name="no_playlist">No Playlist</string>
+    <string name="music_player">Music Player</string>
+    
+    <string name="minuters_ago">mins ago</string>
+    <string name="hours_ago">hours ago</string>
+    <string name="days_ago">days before</string>
+    <string name="yesterday">yesterday</string>
+    <string name="three_day_ago">3 days ago</string>
+    <string name="formate_month_day">MM dd</string>
+    
+    <string name="is_hanged">Received calls</string>
+    <string name="is_dialed">Dialed calls</string>
+    <string name="un_hanged">Missed calls</string>
+    
+    <string name="emergency_number">Emergency Number</string>
+    
+    <string name="phone_incomming">Incomming</string>
+    <string name="phone_holding">Holding</string>
+    <string name="phone_dialing">Dialing</string>
+    <string name="phone_onhold">Ongoing call</string>
+    <string name="phone_callended">Call ended</string>
+    
+    <string name="device_not_support_camera">device not support camera</string>
+    
+    
+    <string name="select_sim_title">Call With</string>
+    <string name="select_sim1">SIM1</string>
+    <string name="select_sim2">SIM2</string>
+</resources>

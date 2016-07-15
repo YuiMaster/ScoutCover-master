@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:circle="http://schemas.android.com/apk/res/com.wind.smartcover"
+    android:background="@android:color/black"
+    android:layout_marginTop="@dimen/activitys_padding_top"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.wind.smartcover.settings.CircleLayout
+        android:id="@+id/layout_circlesettings"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_settings"
+        android:layout_marginTop="0dp"
+        android:layout_width="@dimen/second_width"
+        android:layout_height="@dimen/second_height"
+        circle:radius="84dp" >
+        <ImageButton
+            android:id="@+id/bt_settings"
+            android:background="@drawable/btn_p_settings"
+	        android:layout_width="@dimen/settings_icon_width"
+	        android:layout_height="@dimen/settings_icon_height"/>
+        
+        <RelativeLayout 
+	            android:id="@+id/rl_dialer"
+	            android:clickable="true"
+	            android:descendantFocusability="blocksDescendants"
+		        android:layout_width="@dimen/settings_icon_width"
+		        android:layout_height="@dimen/settings_icon_height">
+	        <ImageButton
+	            android:id="@+id/bt_dialer"
+	            android:background="@drawable/btn_p_dialer"
+	            android:clickable="true"
+	            android:duplicateParentState="true"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"/>
+	        <TextView 
+	            android:id="@+id/tv_dialer"
+	            android:visibility="invisible"
+	            android:background="@drawable/ic_settings_bg"
+	            android:layout_alignParentTop="true"
+	            android:layout_alignParentRight="true"
+	            android:gravity="center"
+	            android:textSize="@dimen/settings_icon_text"
+	            android:textColor="@color/settings_icon_color"
+		        android:layout_width="20dp"
+		        android:layout_height="20dp"/>
+        </RelativeLayout>
+        <ImageButton 
+            android:id="@+id/bt_light"
+            android:background="@drawable/ic_light_unable"
+            android:clickable="false"
+	        android:layout_width="@dimen/settings_icon_width"
+	        android:layout_height="@dimen/settings_icon_height"/>
+        <ImageButton 
+            android:id="@+id/bt_music"
+            android:background="@drawable/btn_p_music"
+	        android:layout_width="@dimen/settings_icon_width"
+	        android:layout_height="@dimen/settings_icon_height"/>
+        <RelativeLayout 
+	            android:id="@+id/rl_sms"
+	            android:clickable="true"
+	            android:descendantFocusability="blocksDescendants"
+		        android:layout_width="@dimen/settings_icon_width"
+		        android:layout_height="@dimen/settings_icon_height">
+	        <ImageButton 
+	            android:id="@+id/bt_sms"
+	            android:background="@drawable/btn_p_sms"
+	            android:clickable="true"
+	            android:duplicateParentState="true"
+		        android:layout_width="@dimen/settings_icon_width"
+		        android:layout_height="@dimen/settings_icon_height"/>
+	        <TextView 
+	            android:id="@+id/tv_sms"
+	            android:visibility="invisible"
+	            android:background="@drawable/ic_settings_bg"
+	            android:layout_alignParentTop="true"
+	            android:layout_alignParentRight="true"
+	            android:gravity="center"
+	            android:textSize="@dimen/settings_icon_text"
+	            android:textColor="@color/settings_icon_color"
+		        android:layout_width="20dp"
+		        android:layout_height="20dp"/>
+        </RelativeLayout>
+    </com.wind.smartcover.settings.CircleLayout>
+
+</RelativeLayout>

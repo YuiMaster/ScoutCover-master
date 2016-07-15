@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 
+    <string name="app_name">WOSSmartCover</string>
+     -->
+    <string name="am">上午</string>
+    <string name="pm">下午</string>
+    
+    
+    <string name="hang_on">接听</string>
+    <string name="hang_off">挂断</string>
+    
+    
+    <string name="callog_title">通话记录</string>
+    <string name="null_string"></string>
+    <string name="no_unread_msg">无未读短信</string>
+    <string name="unread_msg">未读短信</string>
+    <string name="no_missed_calls">无未接来电</string>
+    <string name="no_playlist">无音乐播放列表</string>
+    <string name="music_player">音乐播放器</string>
+    
+    <string name="minuters_ago">分钟前</string>
+    <string name="hours_ago">小时前</string>
+    <string name="days_ago">天前</string>
+    <string name="yesterday">昨天</string>
+    <string name="three_day_ago">前天</string>
+    <string name="formate_month_day">M月dd日</string>
+    
+    <string name="is_hanged">已接电话</string>
+    <string name="is_dialed">已拨电话</string>
+    <string name="un_hanged">未接来电</string>
+    
+    <string name="emergency_number">紧急号码</string>
+    
+    <string name="phone_incomming">来电</string>
+    <string name="phone_holding">接通中</string>
+    <string name="phone_dialing">拨号中</string>
+    <string name="phone_onhold">通话中</string>
+    <string name="phone_callended">已挂断</string>
+    
+    <string name="device_not_support_camera">此设备不支持闪光灯模式</string>
+    
+    
+    <string name="select_sim_title">选择用于通话的SIM卡</string>
+    <string name="select_sim1">卡1</string>
+    <string name="select_sim2">卡2</string>
+</resources>

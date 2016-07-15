@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="@dimen/activitys_padding_top"
+	android:background="@android:color/black"
+    >
+    
+    <RelativeLayout
+        android:layout_width="@dimen/second_width"
+        android:layout_height="@dimen/incoming_a_height"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/incoming_bg_a" >
+        <TextView
+            android:id="@+id/tv_select_sim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="86dp"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusableInTouchMode="true"
+            android:scrollHorizontally="true"
+            android:textColor="@color/phone_num_color"
+            android:text="@string/select_sim_title"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="@dimen/second_width"
+        android:layout_height="@dimen/second_height"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:layout_width="@dimen/second_width"
+            android:layout_height="@dimen/incoming_b_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/incoming_a_height"
+            android:background="@drawable/incoming_bg_b" />
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="136dp" >
+
+        <ImageButton
+            android:clickable="true"
+            android:id="@+id/btn_select_sim1"
+            android:background="@drawable/ic_simicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/tv_select_sim1"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/select_sim1"
+            android:textColor="@color/phone_status_color"
+            android:textSize="14sp" />
+
+        </RelativeLayout>
+        
+        
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="136dp" >
+        <ImageButton
+            android:clickable="true"
+            android:id="@+id/btn_select_sim2"
+            android:background="@drawable/ic_simicon" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/tv_select_sim2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/phone_status_color"
+            android:text="@string/select_sim2"
+            android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:background="@drawable/btn_back_bg"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="@dimen/callog_c_padding_top"
+        android:id="@+id/btn_back"
+        android:layout_width="@dimen/second_width"
+        android:layout_height="@dimen/back_button_height" />
+</RelativeLayout>

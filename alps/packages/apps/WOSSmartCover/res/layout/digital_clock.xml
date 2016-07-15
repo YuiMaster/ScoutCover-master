@@ -1,0 +1,62 @@
+<!-- com.wind.smartcover.clock.DigitalClock -->
+<com.wind.smartcover.clock.DigitalClock
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/digital_clock"
+    android:layout_centerInParent="true"
+    android:layout_width="292dp"
+    android:layout_height="292dp" >
+    <RelativeLayout 
+        android:layout_centerInParent="true"
+        android:layout_width="250dp"
+        android:layout_height="250dp">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="128dp" 
+        android:textSize="17sp"
+        android:text="@string/null_string" />
+    <LinearLayout 
+        android:id="@+id/layout1"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/textView1"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+	    <TextView
+	        android:id="@+id/textView2"
+	        android:layout_width="match_parent"
+	        android:layout_height="75dp"
+	        android:textSize="70sp"
+		    android:text="@string/null_string" />
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="25dp"
+	        >
+		    <TextView
+		        android:id="@+id/textView3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentBottom="true"
+		        android:paddingLeft="10dp"
+		        android:textSize="17sp"
+		        android:text="@string/null_string"/>
+		    <!-- @string/null_string -->
+		    <TextView
+		        android:id="@+id/textView4"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_alignParentBottom="true"
+		        android:paddingRight="10dp"
+		        android:textSize="17sp"
+		        android:text="@string/null_string"/>
+	    </RelativeLayout>
+    </LinearLayout>
+	</RelativeLayout>
+</com.wind.smartcover.clock.DigitalClock>
+<!-- com.wind.smartcover.clock.DigitalClock  -->

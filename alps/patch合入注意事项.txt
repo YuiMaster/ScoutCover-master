@@ -1,0 +1,7 @@
+device路径修改为宏，根据项目修改。
+宏名如下：
+WOS_APP_SMARTCOVER
+ro.wind_os_app_smartcover
+
+framework packages路径为：
+WOS_SmartCover 包含部分代码

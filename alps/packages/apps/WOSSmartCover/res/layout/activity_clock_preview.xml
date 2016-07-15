@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="@dimen/activitys_padding_top"
+	android:background="@android:color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout 
+	    android:layout_marginTop="0dp"
+        android:layout_width="@dimen/second_width"
+        android:layout_height="233dp"
+        android:layout_centerHorizontal="true"
+        >
+	    <android.support.v4.view.ViewPager
+	        android:overScrollMode="never"
+	        android:layout_centerHorizontal="true"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:id="@+id/viewPager"
+	    	/>
+        <RelativeLayout 
+            android:layout_alignParentLeft="true"
+            android:layout_width="39dp"
+            android:layout_height="match_parent"
+            >
+	        <Button
+	            android:id="@+id/btn_clock_pre"
+	            android:layout_width="36dp"
+	            android:layout_height="36dp"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentRight="true"
+	            android:background="@drawable/btn_pre"
+	            />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="39dp"
+            android:layout_height="match_parent"
+            >
+	        <Button
+	            android:id="@+id/btn_clock_next"
+	            android:layout_width="36dp"
+	            android:layout_height="36dp"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentLeft="true"
+	            android:background="@drawable/btn_next"
+	            />
+        </RelativeLayout>
+	</RelativeLayout>
+    
+    <LinearLayout 
+	    android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/back_btn_padding_top"
+        android:layout_width="@dimen/second_width"
+        android:layout_height="@dimen/back_button_height"
+        >
+        <Button 
+        	android:id="@+id/btn_back"
+        	android:background="@drawable/btn_select_ok_bg"
+        	android:layout_width="@dimen/half_second_width"
+        	android:layout_height="@dimen/back_button_height"
+        	/>
+        <Button 
+        	android:id="@+id/btn_cancel"
+        	android:background="@drawable/btn_select_cancel_bg"
+        	android:layout_width="@dimen/half_second_width"
+        	android:layout_height="@dimen/back_button_height"
+        	/>
+        
+        
+    </LinearLayout>
+    <Button
+        android:visibility="gone"
+        android:background="@drawable/btn_back_bg"
+	    android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/back_btn_padding_top"
+        android:layout_width="@dimen/second_width"
+        android:layout_height="@dimen/back_button_height" />
+</RelativeLayout>
